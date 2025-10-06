@@ -156,3 +156,18 @@
   .hero { padding: 56px 16px; }
   .hero__headline { font-size: 1.6rem; }
 }
+@media (max-width: 980px) {
+  .hero__container {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero__headline {
+    order: 1; /* Primero el título */
+  }
+  .hero__container > *:not(.hero__headline) {
+    order: 2; /* Después el resto */
+  }
+  .hero__card {
+    order: 3; /* Finalmente la card */
+  }
+}
