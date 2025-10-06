@@ -8,7 +8,7 @@ import About from "./sections/AboutSection";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/efiratechcapital">
       {/* Navbar siempre visible */}
       <Navbar />
 
