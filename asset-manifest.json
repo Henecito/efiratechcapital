@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Henecito/efiratechcapital/static/css/main.01549068.css",
-    "main.js": "/Henecito/efiratechcapital/static/js/main.bc6b1907.js",
+    "main.js": "/Henecito/efiratechcapital/static/js/main.cf064d77.js",
     "static/js/453.e7c6f6c2.chunk.js": "/Henecito/efiratechcapital/static/js/453.e7c6f6c2.chunk.js",
     "static/media/generated-image.png": "/Henecito/efiratechcapital/static/media/generated-image.a2ead26a2c224924033b.png",
     "index.html": "/Henecito/efiratechcapital/index.html",
     "main.01549068.css.map": "/Henecito/efiratechcapital/static/css/main.01549068.css.map",
-    "main.bc6b1907.js.map": "/Henecito/efiratechcapital/static/js/main.bc6b1907.js.map",
+    "main.cf064d77.js.map": "/Henecito/efiratechcapital/static/js/main.cf064d77.js.map",
     "453.e7c6f6c2.chunk.js.map": "/Henecito/efiratechcapital/static/js/453.e7c6f6c2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.01549068.css",
-    "static/js/main.bc6b1907.js"
+    "static/js/main.cf064d77.js"
   ]
 }
