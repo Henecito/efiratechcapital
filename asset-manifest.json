@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/efiratechcapital/static/css/main.01549068.css",
-    "main.js": "/efiratechcapital/static/js/main.b6b1bcde.js",
+    "main.css": "/efiratechcapital/static/css/main.d21ca557.css",
+    "main.js": "/efiratechcapital/static/js/main.8d5d8b38.js",
     "static/js/453.e7c6f6c2.chunk.js": "/efiratechcapital/static/js/453.e7c6f6c2.chunk.js",
     "static/media/generated-image.png": "/efiratechcapital/static/media/generated-image.a2ead26a2c224924033b.png",
     "index.html": "/efiratechcapital/index.html",
-    "main.01549068.css.map": "/efiratechcapital/static/css/main.01549068.css.map",
-    "main.b6b1bcde.js.map": "/efiratechcapital/static/js/main.b6b1bcde.js.map",
+    "main.d21ca557.css.map": "/efiratechcapital/static/css/main.d21ca557.css.map",
+    "main.8d5d8b38.js.map": "/efiratechcapital/static/js/main.8d5d8b38.js.map",
     "453.e7c6f6c2.chunk.js.map": "/efiratechcapital/static/js/453.e7c6f6c2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.01549068.css",
-    "static/js/main.b6b1bcde.js"
+    "static/css/main.d21ca557.css",
+    "static/js/main.8d5d8b38.js"
   ]
 }
