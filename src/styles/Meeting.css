@@ -1,0 +1,187 @@
+.meeting {
+  position: relative;
+  padding: 6rem 1.5rem;
+  background-color: #f9fafb;
+  overflow: hidden;
+}
+
+.meeting__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle 260px at 14% 22%, #22222216 0 86%, transparent 200px),
+    radial-gradient(circle 220px at 86% 78%, #10111414 0 90%, transparent 200px),
+    radial-gradient(circle 90px  at 62% 66%, #0000000d 0 70%, transparent 200px);
+  opacity: 0.9;
+  animation: meeting-bg-move 32s linear infinite alternate;
+}
+
+@keyframes meeting-bg-move {
+  0%   { background-position: 14% 22%, 86% 78%, 62% 66%; }
+  100% { background-position: 20% 32%, 80% 70%, 70% 74%; }
+}
+
+.meeting__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+  gap: 4rem;
+  align-items: start;
+
+  /* eleva sobre el fondo */
+  position: relative;
+  z-index: 1;
+}
+
+.meeting__headline {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 1rem;
+}
+
+.meeting__lead {
+  font-size: 1.1rem;
+  color: #3a3a3a;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.meeting__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form__group label {
+  font-weight: 500;
+  color: #1e293b;
+}
+
+.form__group input,
+.form__group textarea {
+  padding: 0.9rem 1rem;
+  border: 1px solid #dedede;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #212121;
+  background-color: #ffffff;
+  transition: all 0.2s ease;
+}
+
+.form__group input:focus,
+.form__group textarea:focus {
+  outline: none;
+  border-color: #000000;
+  box-shadow: 0 0 0 3px rgba(0,0,0,0.16);
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.9rem 1.6rem;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  text-align: center;
+}
+
+.btn--primary {
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid #000000;
+  transform: translateY(0);
+}
+
+.btn--primary:hover,
+.btn--primary:focus {
+  background-color: #111111;
+  border-color: #111111;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+}
+
+.meeting__info {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.06);
+
+  position: relative;
+  z-index: 1;
+}
+
+.meeting__info h3 {
+  font-size: 1.4rem;
+  color: #272727;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.meeting__info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+}
+
+.meeting__info ul li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.8rem;
+  color: #4b4b4b;
+}
+
+.meeting__info ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #000000;
+  font-weight: bold;
+}
+
+.meeting__note {
+  font-size: 0.95rem;
+  color: #475569;
+}
+
+.meeting__note a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.meeting__note a:hover {
+  text-decoration: underline;
+}
+
+/* Responsividad */
+@media (max-width: 900px) {
+  .meeting__container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .meeting__headline {
+    font-size: 2rem;
+  }
+
+  .meeting__info {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .meeting { padding: 4.5rem 1rem; }
+  .btn { width: 100%; }
+}

@@ -1,0 +1,153 @@
+.about {
+  position: relative;
+  background: #fcfcfd;
+  padding: 88px 20px 72px 20px;
+  overflow: hidden;
+}
+
+.about__effects {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image:
+    radial-gradient(circle at 20% 10%, #c2c2c233 0 180px, transparent 180px),
+    radial-gradient(circle at 85% 80%, #c2c2c233 0 240px, transparent 240px),
+    linear-gradient(120deg, #f9f9fa 0%, #ffffff 55%);
+  mix-blend-mode: multiply;
+  opacity: 0.92;
+}
+
+/* Contenido centrado y con más aire */
+.about__container {
+  position: relative;
+  z-index: 1;
+  max-width: 1080px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+/* Titular más grande y sobrio */
+.about__title {
+  margin: 0 0 18px 0;
+  font-size: 2.6rem;
+  line-height: 1.15;
+  font-weight: 800;
+  letter-spacing: -.01em;
+  color: #121212;
+}
+
+/* Tarjeta principal (Quiénes somos) amplia y limpia */
+.about__history-card {
+  background: #ffffff;
+  border: 1px solid #ededf2;
+  border-radius: 22px;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.04);
+  padding: 38px;
+}
+
+.about__history-card p {
+  color: #2b2c34;
+  font-size: 1.08rem;
+  line-height: 1.7;
+  margin: 0 0 14px 0;
+}
+
+/* Imagen con borde suave y sombra sutil */
+.about__photo {
+  width: 100%;
+  max-width: 620px;
+  margin: 18px 0 0 0;
+  border-radius: 16px;
+  box-shadow: 0 10px 26px rgba(0,0,0,0.08);
+  object-fit: cover;
+  background: #f3f4f6;
+}
+.about__photo--rounded { border-radius: 22px; }
+
+/* Sección de pilares en tres bloques amplios */
+.about__pillars {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.about__pillar {
+  background: #ffffff;
+  border: 1px solid #ededf2;
+  border-radius: 20px;
+  padding: 30px 26px;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.04);
+}
+
+.about__pillar h3 {
+  margin: 0 0 10px 0;
+  color: #141414;
+  font-size: 1.22rem;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.about__pillar p {
+  color: #343640;
+  font-size: 1.03rem;
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* Bloque IG, sobrio y contrastado */
+.about__ig-section {
+  background: #151515;
+  color: #fff;
+  border-radius: 22px;
+  padding: 28px;
+  text-align: center;
+  box-shadow: inset 0 0 0 1px #1e1e1e, 0 8px 26px rgba(0,0,0,0.18);
+}
+
+.about__ig-section h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.about__ig-section p {
+  margin: 0 0 12px 0;
+  color: #d6d6d6;
+}
+
+.about__ig-btn {
+  display: inline-block;
+  background: #ffffff;
+  color: #0f0f0f;
+  font-weight: 800;
+  border-radius: 32px;
+  padding: 10px 22px;
+  font-size: 1rem;
+  text-decoration: none;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.18);
+  transition: transform .12s ease, box-shadow .16s ease, background .16s ease, color .16s ease;
+}
+.about__ig-btn:hover {
+  background: #0f0f0f;
+  color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 26px rgba(0,0,0,0.22);
+}
+.about__ig-icon { margin-right: 8px; }
+
+/* Responsivo */
+@media (max-width: 980px) {
+  .about { padding: 72px 16px; }
+  .about__title { font-size: 2.2rem; }
+  .about__pillars { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 640px) {
+  .about { padding: 56px 14px; }
+  .about__title { font-size: 1.7rem; }
+  .about__history-card { padding: 22px; }
+  .about__pillars { grid-template-columns: 1fr; gap: 16px; }
+  .about__photo { max-width: 100%; }
+}
