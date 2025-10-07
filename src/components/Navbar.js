@@ -8,10 +8,10 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="navbar__brand">
+      <Link to="/" className="navbar__brand" onClick={() => setOpen(false)}>
         <img src={logo} alt="Efira logo" className="navbar__logo" />
         <span className="navbar__brand-name">Efira Tech Capital</span>
-      </div>
+      </Link>
       <div className={`navbar__links${open ? " navbar__links--open" : ""}`}>
         <Link className="navbar__link" to="/" onClick={() => setOpen(false)}>
           Home
