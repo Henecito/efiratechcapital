@@ -1,10 +1,8 @@
-Efira Tech Capital
 Este repositorio contiene la aplicación web oficial de Efira Tech Capital, desarrollada con React y desplegada en GitHub Pages.
 
-Propósito
 La aplicación es la plataforma web institucional de Efira Tech Capital, con información corporativa y de contacto.
 
-Uso y desarrollo interno
+Uso y desarrollo interno:
 Clonar el repositorio para desarrollo o mantenimiento.
 
 Ejecutar localmente con npm start.
